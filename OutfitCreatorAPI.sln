@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32319.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutfitCreatorAPI", "OutfitCreatorAPI\OutfitCreatorAPI.csproj", "{6348882B-C273-4CC9-925A-53943EE665E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutfitCreator.Domain", "OutfitCreator.Domain\OutfitCreator.Domain.csproj", "{1C42F180-BF0C-4F18-B098-5C330464BC3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6348882B-C273-4CC9-925A-53943EE665E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6348882B-C273-4CC9-925A-53943EE665E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6348882B-C273-4CC9-925A-53943EE665E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6348882B-C273-4CC9-925A-53943EE665E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C42F180-BF0C-4F18-B098-5C330464BC3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C42F180-BF0C-4F18-B098-5C330464BC3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C42F180-BF0C-4F18-B098-5C330464BC3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C42F180-BF0C-4F18-B098-5C330464BC3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD62FA2F-A275-4226-B038-61138F9753F0}
+	EndGlobalSection
+EndGlobal
