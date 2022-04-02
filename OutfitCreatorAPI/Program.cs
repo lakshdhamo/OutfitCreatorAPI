@@ -1,5 +1,6 @@
 using OutfitCreator.Domain.Interfaces;
 using OutfitCreator.Domain.Services;
+using OutfitCreatorAPI.Controllers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +12,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IOutfitService, OutfitService>();
+builder.Services.AddSingleton<ILogger>(svc => svc.GetRequiredService<ILogger<OutfitController>>());
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using OutfitCreator.Domain.Dto.Output.Outfit;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,10 +14,16 @@ namespace OutfitCreator.Domain.Dto.Output
         public string Id { get; init; }
 
         [JsonProperty("maintenance_group")]
-        public string Name { get; init; }
+        public string Name { get; set; }
+
+        [JsonProperty("brand")]
+        public string Brand { get; init; }
 
         [JsonProperty("variants")]
         public List<Variant> Variants { get; init; }
+
+        [JsonProperty("descriptions")]
+        public List<Description> Descriptions { get; init; }
 
     }
 }

@@ -18,6 +18,9 @@ namespace OutfitCreator.Domain.Dto.Output
         [JsonProperty("currency")]
         public string Currency { get; init; }
 
+        [JsonProperty("color_group")]
+        public string Color { get; init; }
+
         [JsonProperty("original_price")]
         public decimal OriginalPrice { get; set; }
 
