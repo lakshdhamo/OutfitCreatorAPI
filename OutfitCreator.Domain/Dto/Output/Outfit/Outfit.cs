@@ -11,9 +11,9 @@ namespace OutfitCreator.Domain.Dto
     public record Outfit
     {
         [JsonProperty("totalCount")]
-        public int TotalCount { get; set; }
+        public int TotalCount { get; init; } = default!;
 
         [JsonProperty("items")]
-        public List<Item> items { get; set; }
+        public List<Item> Items { get; init; } = default!;
     }
 }

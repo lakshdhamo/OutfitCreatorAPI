@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace OutfitCreator.Domain.Dto.Output.Outfit
 {
-    public class Description
+    public record Description
     {
         [JsonProperty("language")]
-        public string Language { get; init; }
+        public string Language { get; init; } = default!;
 
         [JsonProperty("description")]
-        public string Text { get; init; }
+        public string Text { get; init; } = default!;
 
     }
 }

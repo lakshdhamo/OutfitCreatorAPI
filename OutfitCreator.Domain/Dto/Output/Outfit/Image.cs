@@ -10,10 +10,10 @@ namespace OutfitCreator.Domain.Dto.Output
     public record Image
     {
         [JsonProperty("key")]
-        public string Key { get; init; }
+        public string Key { get; init; } = default!;
 
         [JsonProperty("type")]
-        public string Type { get; init; }
-        
+        public string Type { get; init; } = default!;
+
     }
 }

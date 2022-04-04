@@ -10,9 +10,9 @@ namespace OutfitCreator.Domain.Dto.Output
     public record Country
     {
         [JsonProperty("iso_3166")]
-        public string Code { get; init; }
+        public string Code { get; init; } = default!;
 
         [JsonProperty("name")]
-        public string Name { get; init; }
+        public string Name { get; init; } = default!;
     }
 }

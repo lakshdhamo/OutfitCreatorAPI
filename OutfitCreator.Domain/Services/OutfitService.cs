@@ -48,7 +48,7 @@ namespace OutfitCreator.Domain.Services
                         if (dynJson is not null)
                         {
                             outfit = dynJson.ToObject<Outfit>();
-                            foreach (var item in outfit.items)
+                            foreach (var item in outfit.Items)
                             {
                                 Description? description = item.Descriptions.FirstOrDefault(x => x.Language == country);
                                 if (description == null)

@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 
 namespace OutfitCreator.Domain.Dto.Output.Filters
 {
-    public class Filter
+    public record Filter
     {
         [JsonProperty("men")]
-        public Gender Men { get; set; }
+        public Gender Men { get; init; } = default!;
 
         [JsonProperty("none")]
-        public Gender None { get; set; }
+        public Gender None { get; init; } = default!;
 
         [JsonProperty("women")]
-        public Gender Women { get; set; }
+        public Gender Women { get; init; } = default!;
     }
 }

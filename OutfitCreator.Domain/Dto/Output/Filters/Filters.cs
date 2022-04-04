@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace OutfitCreator.Domain.Dto.Output.Filters
 {
-    public class Filters
+    public record Filters
     {
         [JsonProperty("name")]
-        public string Name { get; set; }
+        public string Name { get; init; } = default!;
 
         [JsonProperty("value")]
-        public string Value { get; set; }
+        public string Value { get; init; } = default!;
     }
 }

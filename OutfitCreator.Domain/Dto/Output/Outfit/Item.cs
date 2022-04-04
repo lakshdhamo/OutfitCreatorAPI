@@ -11,19 +11,19 @@ namespace OutfitCreator.Domain.Dto.Output
     public record Item
     {
         [JsonProperty("id")]
-        public string Id { get; init; }
+        public string Id { get; init; } = default!;
 
         [JsonProperty("maintenance_group")]
-        public string Name { get; set; }
+        public string Name { get; set; } = default!;
 
         [JsonProperty("brand")]
-        public string Brand { get; init; }
+        public string Brand { get; init; } = default!;
 
         [JsonProperty("variants")]
-        public List<Variant> Variants { get; init; }
+        public List<Variant> Variants { get; init; } = default!;
 
         [JsonProperty("descriptions")]
-        public List<Description> Descriptions { get; init; }
+        public List<Description> Descriptions { get; init; } = default!;
 
     }
 }

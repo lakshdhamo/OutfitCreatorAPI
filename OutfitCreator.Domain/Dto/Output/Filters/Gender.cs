@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace OutfitCreator.Domain.Dto.Output.Filters
 {
-    public class Gender
+    public record Gender
     {
         [JsonProperty("categories")]
-        public List<Category> Categories { get; set; }
+        public List<Category> Categories { get; init; } = default!;
     }
 }

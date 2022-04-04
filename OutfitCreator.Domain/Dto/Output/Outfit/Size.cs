@@ -10,11 +10,11 @@ namespace OutfitCreator.Domain.Dto.Output
     public record Size
     {
         [JsonProperty("size_value")]
-        public string SizeValue { get; init; }
+        public string SizeValue { get; init; } = default!;
 
         [JsonProperty("size_name")]
-        public string SizeName { get; init; }
+        public string SizeName { get; init; } = default!;
 
-        
+
     }
 }
